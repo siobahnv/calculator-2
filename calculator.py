@@ -11,6 +11,8 @@ from arithmetic import *
 # Your code goes here
 
 def calc_functions(tokens):
+	"""Check conditional for appropriate calculation"""
+
 	if tokens[0] == "q":
 		return
 	elif tokens[0] == "+":
@@ -32,10 +34,9 @@ def calc_functions(tokens):
 
 
 def get_input():
-	print("Hello!")
-
+	"""Get input and call calc_functions"""
+	
 	input_string = input("")
-
 	tokens = input_string.split(" ")
 	print(calc_functions(tokens))
 
