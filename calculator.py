@@ -21,6 +21,8 @@ def calc_functions(tokens):
 		return multiply(int(tokens[1]), int(tokens[2]))
 	elif tokens[0] == "/":
 		return divide(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == "square":
+		return square(int(tokens[1]))
 
 
 def get_input():
