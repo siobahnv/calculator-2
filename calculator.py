@@ -27,6 +27,8 @@ def calc_functions(tokens):
 		return cube(int(tokens[1]))
 	elif tokens[0] == "pow":
 		return power(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == "mod":
+		return mod(int(tokens[1]), int(tokens[2]))
 
 
 def get_input():
