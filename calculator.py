@@ -25,6 +25,8 @@ def calc_functions(tokens):
 		return square(int(tokens[1]))
 	elif tokens[0] == "cube":
 		return cube(int(tokens[1]))
+	elif tokens[0] == "pow":
+		return power(int(tokens[1]), int(tokens[2]))
 
 
 def get_input():
