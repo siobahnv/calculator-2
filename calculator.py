@@ -6,15 +6,19 @@ calculator program yourself in this file.
 
 from arithmetic import *
 
+
+
+# Your code goes here
+
 def calc_functions(tokens):
 	if tokens[0] == "q":
 		return
 	elif tokens[0] == "+":
 		return add(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == "-":
+		return subtract(int(tokens[1]), int(tokens[2]))
 
 
-
-# Your code goes here
 def get_input():
 	print("Hello!")
 
