@@ -23,6 +23,8 @@ def calc_functions(tokens):
 		return divide(int(tokens[1]), int(tokens[2]))
 	elif tokens[0] == "square":
 		return square(int(tokens[1]))
+	elif tokens[0] == "cube":
+		return cube(int(tokens[1]))
 
 
 def get_input():
